@@ -6,6 +6,7 @@ import java.util.List;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -56,6 +57,11 @@ public static void waitForVisibility(WebElement element, WebDriver driver) {
 	 public static void scrollDown(WebDriver driver) {
 		 JavascriptExecutor js = (JavascriptExecutor) driver;
 		 js.executeScript("window.scrollBy(0,1350)", "");
+	 }
+	 public static void mousehover(WebElement element,WebDriver driver) {
+		 Actions action=new Actions(driver);
+		 action.moveToElement(element).build().perform();
+		 
 	 }
 	 
 }
