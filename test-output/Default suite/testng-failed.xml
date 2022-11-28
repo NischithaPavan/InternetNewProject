@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.inter.qa.testcases.TC_02_AddAndRemoveTest">
+      <class name="com.inter.qa.testcases.TC_09_HoversTest">
         <methods>
+          <include name="verifyhovertexttest"/>
           <include name="setup"/>
-          <include name="teardown"/>
-          <include name="verifyAddElementBtnTest"/>
         </methods>
-      </class> <!-- com.inter.qa.testcases.TC_02_AddAndRemoveTest -->
+      </class> <!-- com.inter.qa.testcases.TC_09_HoversTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -50,7 +50,7 @@ public static void waitForVisibility(WebElement element, WebDriver driver) {
 	 }
 	 public static void selectValueFromDropDownBy(WebDriver driver,WebElement element) {
 		 Select sel=new Select(element);
-		 sel.selectByVisibleText("Norway");
+		 sel.selectByIndex(1);
 		 
 	 }
 
